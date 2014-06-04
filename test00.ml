@@ -21,7 +21,7 @@ let test_split1 test_ctxt = assert_equal ["foo"; "bar"] (split_words "foo bar");
 let test_split2 test_ctxt = assert_equal ["foo"; "bar"] (split_words "foo\n\tbar");;
 let test_split3 test_ctxt = assert_equal ["foo"; "bar"] (split_words "foo-bar");;
 let test_split4 test_ctxt = assert_equal ["foo"; "bar"] (split_words "foo_bar");;
-let test_split5 test_ctxt = assert_equal ["foo"; "bar"] (split_words "foo_bar");; (* thisi is brken for now *)
+let test_split5 test_ctxt = assert_equal ["foo"; "bar"] (split_words "fooBar");; (* thisi is brken for now *)
 
 (* Name the test cases and group them together *)
 let suite_split_words=
