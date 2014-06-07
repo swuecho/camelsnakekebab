@@ -18,19 +18,19 @@ let test_split11 _ = assert_equal ["foo1";"Bar"] (split_words "foo1Bar");;
 
 (* Name the test cases and group them together *)
 let suite_split_words=
-"suite_case">:::
- ["test1">:: test_split1;
-  "test2">:: test_split2;
-  "test3">:: test_split3;
-  "test4">:: test_split4;
-  "test5">:: test_split5;
-  "test6">:: test_split6;
-  "test7">:: test_split7;
-  "test8">:: test_split8;
-  "test9">:: test_split9;
-  "test10">:: test_split10;
-  "test11">:: test_split11;
- ];;
+  "suite_case">:::
+  ["test1">:: test_split1;
+   "test2">:: test_split2;
+   "test3">:: test_split3;
+   "test4">:: test_split4;
+   "test5">:: test_split5;
+   "test6">:: test_split6;
+   "test7">:: test_split7;
+   "test8">:: test_split8;
+   "test9">:: test_split9;
+   "test10">:: test_split10;
+   "test11">:: test_split11;
+  ];;
 
 let test_upper_camel_case _ = assert_equal "FluxCapacitor" (upper_camel_case "flux_capacitor");;
 let test_lower_camel_case  _ = assert_equal "fluxCapacitor" (lower_camel_case "flux_capacitor");;
@@ -42,16 +42,16 @@ let test_kebab_case _ =  assert_equal  "peppers-meat-pineapple" (kebab_case "Pep
 let test_http_header_case _ = assert_equal     "X-SSL-Cipher"   ( http_header_case "x-ssl-cipher");; 
 
 let suite_convert_case =
-"suite_case_convert">:::
- ["test1">:: test_upper_camel_case;
-  "test2">:: test_lower_camel_case;
-  "test3">:: test_lower_snake_case1;
-  "test4">:: test_lower_snake_case2;
-  "test5">:: test_upper_snake_case;
-  "test6">:: test_constant_case;
-  "test7">:: test_kebab_case;
-  "test8">:: test_http_header_case;
- ];;
+  "suite_case_convert">:::
+  ["test1">:: test_upper_camel_case;
+   "test2">:: test_lower_camel_case;
+   "test3">:: test_lower_snake_case1;
+   "test4">:: test_lower_snake_case2;
+   "test5">:: test_upper_snake_case;
+   "test6">:: test_constant_case;
+   "test7">:: test_kebab_case;
+   "test8">:: test_http_header_case;
+  ];;
 
 
 let () =
