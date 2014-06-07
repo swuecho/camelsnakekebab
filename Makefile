@@ -1,4 +1,3 @@
-
 test:
 	corebuild -pkg pcre -pkg oUnit test.byte	
 	./test.byte
