@@ -4,10 +4,26 @@ Version:     0.1
 Synopsis:    A Ocaml library for word case conversions
 Authors:     Hao Wu
 License:     Perl
-Plugins:     META (0.4)
+BuildTools: ocamlbuild
+Plugins:    META (0.4)
 
 Library camelsnakekebab
-  Path:       .
-  BuildTools: ocamlbuild
+  Path:       lib 
   Modules:    Camelsnakekebab
   BuildDepends: threads, core, pcre
+
+Executable run_test
+  Path:               t 
+  MainIs:             basic.ml
+  Build$:             flag(tests)
+  Custom:             true
+  CompiledObject:     best
+  Install:            false
+  BuildDepends:       camelsnakekebab, oUnit
+
+Test run_test 
+  Run$:               flag(tests)
+  Command:            $run_test
+  WorkingDirectory:   t
+
+
