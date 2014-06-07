@@ -4,8 +4,6 @@ val upper_camel_case: string -> string
 
 val lower_camel_case :string -> string
 
-val camel_snake_case : string -> string
-
 val lower_snake_case : string -> string
 
 val upper_snake_case : string -> string

@@ -1,6 +1,7 @@
 open OUnit2;;
 open Camelsnakekebab;;
 (* test test case is from https://metacpan.org/pod/String::CamelSnakeKebab *) 
+(* todo rewrite the test and make the test clean *)
 
 (* test split *)
 let test_split1 _ = assert_equal ["foo"; "bar"] (split_words "foo bar");;
