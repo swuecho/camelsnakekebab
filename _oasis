@@ -1,0 +1,14 @@
+OASISFormat: 0.4
+Name:         camel-snake-kebab
+Version:     0.1
+Synopsis:    A Ocaml library for word case conversions
+Authors:     Hao Wu
+License:     Perl
+Plugins:     META (0.4)
+
+Library camelsnakekebab
+  Path:       .
+  BuildTools: ocamlbuild
+  Modules:    Camelsnakekebab
+  BuildDepends: threads, core, pcre
+  

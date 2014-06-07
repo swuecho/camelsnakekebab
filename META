@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: c69cc76af28d62c9f09af691b600a422)
+version = "0.1"
+description = "A Ocaml library for word case conversions"
+requires = "threads core pcre"
+archive(byte) = "camelsnakekebab.cma"
+archive(byte, plugin) = "camelsnakekebab.cma"
+archive(native) = "camelsnakekebab.cmxa"
+archive(native, plugin) = "camelsnakekebab.cmxs"
+exists_if = "camelsnakekebab.cma"
+# OASIS_STOP
+
