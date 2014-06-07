@@ -30,10 +30,13 @@ clean:
 
 scrub: clean
 	ocaml setup.ml -distclean
-	rm -rf _tags
-	rm -rf myocamlbuild.ml
-	rm -rf ./lib/META
-	rm -rf setup.ml
+	rm  _tags
+	rm  myocamlbuild.ml
+	rm  setup.ml
+	rm  lib/META
+	rm  lib/*.mldylib
+	rm  lib/*.mllib
+		
 
 install:
 	ocaml setup.ml -install

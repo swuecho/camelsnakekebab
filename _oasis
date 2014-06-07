@@ -5,10 +5,11 @@ Synopsis:    A Ocaml library for word case conversions
 Authors:     Hao Wu
 License:     Perl
 BuildTools: ocamlbuild
-Plugins:    META (0.4)
+Plugins: META (0.4)
 
 Library camelsnakekebab
   Path:       lib 
+  Findlibname: camelsnakekebab
   Modules:    Camelsnakekebab
   BuildDepends: threads, core, pcre
 

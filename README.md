@@ -6,23 +6,26 @@ port of  https://metacpan.org/pod/String::CamelSnakeKebab
 ## Example
 
 ```ocaml
-let test_upper_camel_case _ = assert_equal "FluxCapacitor" (upper_camel_case "flux_capacitor");;
-let test_lower_camel_case  _ = assert_equal "fluxCapacitor" (lower_camel_case "flux_capacitor");;
-let test_lower_snake_case1 _ = assert_equal "a_snake_slithers_slyly" ( lower_snake_case "ASnakeSlithersSlyly");; 
-let test_lower_snake_case2 _ = assert_equal "address1" ( lower_snake_case "address1");; 
-let test_upper_snake_case _ = assert_equal "A_Snake_Slithers_Slyly" ( upper_snake_case "ASnakeSlithersSlyly");; 
-let test_constant_case _ = assert_equal   "I_AM_CONSTANT" (constant_case "I am constant");;
-let test_kebab_case _ =  assert_equal  "peppers-meat-pineapple" (kebab_case "Peppers_Meat_Pineapple");;
-let test_http_header_case _ = assert_equal     "X-SSL-Cipher"   ( http_header_case "x-ssl-cipher");; 
+assert_equal ["foo"; "bar"] (split_words "foo bar");;
+assert_equal ["foo"; "bar"] (split_words "foo\n\tbar");;
+assert_equal ["foo"; "bar"] (split_words "foo-bar");;
+assert_equal ["foo"; "Bar"] (split_words "fooBar");;
+assert_equal ["Foo"; "Bar"] (split_words "FooBar");;
+assert_equal ["foo"; "bar"] (split_words "foo_bar");; 
+assert_equal ["FOO"; "BAR"] (split_words "FOO_BAR");; 
+assert_equal ["foo1"] (split_words "foo1");; 
+assert_equal ["foo1bar"] (split_words "foo1bar");; 
+assert_equal ["foo1";"bar"] (split_words "foo1_bar");;
+assert_equal ["foo1";"Bar"] (split_words "foo1Bar");;
+assert_equal "FluxCapacitor" (upper_camel_case "flux_capacitor");;
+assert_equal "fluxCapacitor" (lower_camel_case "flux_capacitor");;
+assert_equal "a_snake_slithers_slyly" ( lower_snake_case "ASnakeSlithersSlyly");; 
+assert_equal "address1" ( lower_snake_case "address1");; 
+assert_equal "A_Snake_Slithers_Slyly" ( upper_snake_case "ASnakeSlithersSlyly");; 
+assert_equal  "I_AM_CONSTANT" (constant_case "I am constant");;
+assert_equal  "peppers-meat-pineapple" (kebab_case "Peppers_Meat_Pineapple");;
+assert_equal  "X-SSL-Cipher"   ( http_header_case "x-ssl-cipher");; 
 ```
-
-
-
-## TODO
-1. write make file?( oasis ?)
-2. upload to opam? (need final review)
-
-
 
 ## write a summary
 
@@ -34,4 +37,3 @@ the regex problem
    but it still have bug in it
    submit bug report, and the author get it work
 4. finally get it work 
-
