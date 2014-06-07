@@ -11,4 +11,3 @@ Library camelsnakekebab
   BuildTools: ocamlbuild
   Modules:    Camelsnakekebab
   BuildDepends: threads, core, pcre
-  
