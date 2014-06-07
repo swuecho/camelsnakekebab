@@ -14,7 +14,7 @@ let split_words str =
     String.concat ~sep:"|" ["\\s+"; "_"; "-";
                             "(?<=[A-Z])(?=[A-Z][a-z])";
                             "(?<=[^A-Z_-])(?=[A-Z])";
-                            "(?<=[A-Za-z1-9])(?=[^A-Za-z1-9])"] in
+                            "(?<=[A-Za-z0-9])(?=[^A-Za-z0-9])"] in
   Pcre.split ~pat:word_separator_pattern str;;
 
 let convert_case ~convert_first ~convert_rest ~sep ~str =
