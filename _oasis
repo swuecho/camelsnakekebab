@@ -14,7 +14,7 @@ Library camelsnakekebab
   BuildDepends: threads, core, pcre
 
 Executable run_test
-  Path:               t 
+  Path:               lib_test 
   MainIs:             basic.ml
   Build$:             flag(tests)
   Custom:             true
@@ -25,6 +25,6 @@ Executable run_test
 Test run_test 
   Run$:               flag(tests)
   Command:            $run_test
-  WorkingDirectory:   t
+  WorkingDirectory:   lib_test
 
 
