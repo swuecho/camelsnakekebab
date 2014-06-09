@@ -50,13 +50,13 @@ port of  https://metacpan.org/pod/String::CamelSnakeKebab
 (lower_camel_case "flux_capacitor");;
 "fluxCapacitor" 
 
-( lower_snake_case "ASnakeSlithersSlyly");; 
+(lower_snake_case "ASnakeSlithersSlyly");; 
 "a_snake_slithers_slyly" 
 
-( lower_snake_case "address1");; 
+(lower_snake_case "address1");; 
 "address1" 
 
- ( upper_snake_case "ASnakeSlithersSlyly");; 
+(upper_snake_case "ASnakeSlithersSlyly");; 
 "A_Snake_Slithers_Slyly"
 
 (constant_case "I am constant");;
@@ -65,7 +65,7 @@ port of  https://metacpan.org/pod/String::CamelSnakeKebab
 (kebab_case "Peppers_Meat_Pineapple");;
 "peppers-meat-pineapple" 
 
- ( http_header_case "x-ssl-cipher");; 
+(http_header_case "x-ssl-cipher");; 
 "X-SSL-Cipher"  
 ```
 
