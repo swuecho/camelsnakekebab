@@ -27,4 +27,3 @@ Test run_test
   Command:            $run_test
   WorkingDirectory:   lib_test
 
-
