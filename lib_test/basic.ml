@@ -3,7 +3,7 @@ open Camelsnakekebab;;
 (* test test case is from https://metacpan.org/pod/String::CamelSnakeKebab *) 
 (* todo rewrite the test and make the test clean *)
 
-(* test split *)
+(* test words_split *)
 let test_split1 _ = assert_equal ["foo"; "bar"] (split_words "foo bar");;
 let test_split2 _ = assert_equal ["foo"; "bar"] (split_words "foo\n\tbar");;
 let test_split3 _ = assert_equal ["foo"; "bar"] (split_words "foo-bar");;

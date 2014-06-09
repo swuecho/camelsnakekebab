@@ -43,5 +43,3 @@ let kebab_case str =
 let http_header_case  str =  
   convert_case ~convert_first:capitalize_http_header ~convert_rest:capitalize_http_header ~sep:"-" ~str;;
 
-
-
