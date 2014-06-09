@@ -1,9 +1,13 @@
+##  NAME
+
 ## camelsnakekebab 
+
+A Ocaml library for word case conversion
 
 port of  https://metacpan.org/pod/String::CamelSnakeKebab 
 
 
-## Example
+## SYNPOSIS
 
 ```ocaml
 (split_words "foo bar");;
