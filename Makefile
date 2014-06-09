@@ -9,10 +9,6 @@ configure: oasis-setup
 configure-all: oasis-setup
 	ocaml setup.ml -configure --enable-tests 
 
-configure-no-tests:
-	oasis setup
-	ocaml setup.ml -configure
-
 build: configure-all
 	ocaml setup.ml -build
 
