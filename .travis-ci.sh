@@ -19,5 +19,7 @@ opam --git-version
 opam init
 eval `opam config env`
 opam install oasis 
+opam install pcre-ocaml
+opam install core
 make
 make test
