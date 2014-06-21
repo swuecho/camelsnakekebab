@@ -1,5 +1,7 @@
 ##  NAME
 
+[![Build Status](https://travis-ci.org/swuecho/camelsnakekebab.svg?branch=master)](https://travis-ci.org/swuecho/camelsnakekebab)
+
 ## camelsnakekebab 
 
 A Ocaml library for word case conversion
