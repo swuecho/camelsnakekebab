@@ -9,7 +9,7 @@ let capitalize_http_header s =
   | _    -> String.capitalize s;;
 
 let split_words str = 
-  (*  "A pattern that matches all known word separators." *)
+  (*  A pattern that matches all known word separators. *)
   let word_separator_pattern =
     String.concat ~sep:"|" ["\\s+"; "_"; "-";
                             "(?<=[A-Z])(?=[A-Z][a-z])";
