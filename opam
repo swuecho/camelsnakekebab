@@ -14,7 +14,7 @@ build-test: [make "test"]
 available: [ ocaml-version >= "4.02.3" ]
 
 depends: [
-  "Core",
-  "Pcre",
+  "Core"
+  "Pcre"
   "ounit" {test}
 ]
