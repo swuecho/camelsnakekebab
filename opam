@@ -7,6 +7,14 @@ bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
 dev-repo: "https://github.com/swuecho/camelsnakekebab.git"
 license: "Public Domain"
 build: [
-  ["make"]
+  [make]
 ]
+build-test: [make "test"]
+
 available: [ ocaml-version >= "4.02.3" ]
+
+depends: [
+  "Core",
+  "Pcre",
+  "ounit" {test}
+]
