@@ -1,0 +1,4 @@
+(library
+ ((name   camelsnakekebab)
+  (public_name  camelsnakekebab)
+  (libraries (pcre  Core))))
