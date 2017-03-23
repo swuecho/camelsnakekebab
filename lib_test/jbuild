@@ -1,0 +1,12 @@
+(jbuild_version 1)
+
+(executables
+  ((names (basic))
+  (libraries (ounit camelsnakekebab))
+))
+
+(alias
+ ((name    runtest)
+  (deps    (basic.exe))
+  (action  (run ${<}))))
+

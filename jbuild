@@ -1,8 +1,0 @@
-(alias
- ((name    runtest)
-  (deps    (basic.exe))
-  (action  (run ${<}))))
-
-(executables
-  ((names (basic.exe))
-  ))
