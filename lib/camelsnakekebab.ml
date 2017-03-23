@@ -1,10 +1,10 @@
-open Core.Std;;
+open Core;;
 
 let capitalize_http_header s =
   let uppercase_s = String.uppercase s in    
   let uppercase_http_headers =  
     ["CSP"; "ATT"; "WAP"; "IP" ;"HTTP"; "CPU" ;"DNT"; "SSL"; "UA"; "TE" ;"WWW"; "XSS"; "MD5"] in
-  match List.mem uppercase_http_headers uppercase_s with
+  match List.mem uppercase_http_headers uppercase_s ~equal:String.equal with
   | true -> uppercase_s 
   | _    -> String.capitalize s;;
 
