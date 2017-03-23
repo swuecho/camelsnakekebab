@@ -1,4 +1,8 @@
 (library
- ((name   camelsnakekebab)
+ (
+  (name   camelsnakekebab)
   (public_name  camelsnakekebab)
-  (libraries (pcre core))))
+  (libraries (pcre core))
+  (synopsis "Description for this library...")
+
+))
