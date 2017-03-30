@@ -10,6 +10,7 @@ bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
 dev-repo: "https://github.com/swuecho/camelsnakekebab.git"
 available: [ ocaml-version >= "4.02.3" ]
 depends: [
+  "jbuilder" {build}
   "core"
   "pcre"
   "ounit" {test}
