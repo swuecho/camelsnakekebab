@@ -1,5 +1,16 @@
 opam-version: "1.2"
-maintainer: "Hao Wu"
+version: "0.1"
+maintainer: "Hao Wu <echowuhao@gmail.com>"
 authors: ["Hao Wu <echowuhao@gmail.com>"]
 license: "Apache-2.0"
 build: [["jbuilder" "build" "--only-packages" "camelsnakekebab" "--root" "." "-j" jobs "@install"]]
+build-test: [["jbuilder build @runtest"]]
+homepage: "https://github.com/swuecho/camelsnakekebab"
+bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
+dev-repo: "https://github.com/swuecho/camelsnakekebab.git"
+available: [ ocaml-version >= "4.02.3" ]
+depends: [
+  "core"
+  "pcre"
+  "ounit" {test}
+]
