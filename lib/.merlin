@@ -1,4 +1,4 @@
-B ../_build/default/lib
+B ../_build/4.04.0/lib
 FLG -w -40
 PKG base
 PKG base.caml

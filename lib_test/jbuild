@@ -2,7 +2,7 @@
 
 (executables
   ((names (basic))
-  (libraries (camelsnakekebab ounit))
+  (libraries (camelsnakekebab oUnit))
 ))
 
 (alias
