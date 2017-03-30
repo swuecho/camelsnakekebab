@@ -1,0 +1,5 @@
+opam-version: "1.2"
+maintainer: "Hao Wu"
+authors: ["Hao Wu <echowuhao@gmail.com>"]
+license: "Apache-2.0"
+build: [["jbuilder" "build" "--only-packages" "camelsnakekebab" "--root" "." "-j" jobs "@install"]]
