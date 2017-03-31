@@ -2,7 +2,7 @@
  (
   (name   camelsnakekebab)
   (public_name  camelsnakekebab)
-  (libraries (pcre core))
+  (libraries (pcre base))
   (synopsis "Description for this library...")
 
 ))
