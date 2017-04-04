@@ -4,6 +4,7 @@ maintainer: "Hao Wu <echowuhao@gmail.com>"
 authors: ["Hao Wu <echowuhao@gmail.com>"]
 license: "Apache-2.0"
 build: [["jbuilder" "build" "--only" "camelsnakekebab" "--root" "." "-j" jobs "@install"]]
+install: [["jbuilder" "build" "--only" "camelsnakekebab" "--root" "." "-j" jobs "@install"]]
 build-test: [["jbuilder build @runtest"]]
 homepage: "https://github.com/swuecho/camelsnakekebab"
 bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
