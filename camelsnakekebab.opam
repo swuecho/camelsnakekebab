@@ -16,6 +16,6 @@ depends: [
   "ounit" {test}
 ]
 
-descr: "
-OCaml library for various case change
-"
+#descr: "
+#OCaml library for various case change
+#"
