@@ -5,4 +5,5 @@ PKG base.caml
 PKG base.shadow_stdlib
 PKG bytes
 PKG pcre
+PKG sexplib.0
 S .

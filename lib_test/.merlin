@@ -8,5 +8,6 @@ PKG bytes
 PKG oUnit
 PKG oUnit.advanced
 PKG pcre
+PKG sexplib.0
 PKG unix
 S .
