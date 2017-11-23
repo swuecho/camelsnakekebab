@@ -7,6 +7,9 @@ default:
 install:
 	jbuilder install $(INSTALL_ARGS)
 
+test:
+	jbuilder build @runtest 
+
 uninstall:
 	jbuilder uninstall $(INSTALL_ARGS)
 
