@@ -1,15 +1,15 @@
 lib: [
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmxs"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.a"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmxa"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cma"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.mli"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmti"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmt"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmx"
-  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmi"
-  "_build/install/default/lib/camelsnakekebab/opam" {"opam"}
   "_build/install/default/lib/camelsnakekebab/META" {"META"}
+  "_build/install/default/lib/camelsnakekebab/opam" {"opam"}
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmi"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmx"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmt"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmti"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.mli"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cma"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmxa"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.a"
+  "_build/install/default/lib/camelsnakekebab/camelsnakekebab.cmxs"
 ]
 doc: [
   "_build/install/default/doc/camelsnakekebab/README.md"

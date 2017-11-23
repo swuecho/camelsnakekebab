@@ -1,8 +1,7 @@
-B ../_build/4.04.0/lib
+B ../_build/default/lib
 FLG -w -40
 PKG base
 PKG base.caml
 PKG base.shadow_stdlib
-PKG bytes
 PKG pcre
-S .
+PKG sexplib.0
