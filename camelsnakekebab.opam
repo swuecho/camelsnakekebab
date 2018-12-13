@@ -1,5 +1,5 @@
 opam-version: "2.0"
-version: "0.2"
+version: "0.3"
 synopsis: "A Ocaml library for word case conversion"
 description:"""
 conversion bettween upper_camel_case, lower_camel_case 
@@ -8,16 +8,15 @@ constant_case, kebab_case, http_header_case
 """
 maintainer: "Hao Wu <echowuhao@gmail.com>"
 authors: ["Hao Wu <echowuhao@gmail.com>"]
-license: "Apache-2.0"
+license:  "MIT"
 build: ["dune" "build" "-p" name]
-build-test: [["jbuilder" "build" "@runtest"]]
 homepage: "https://github.com/swuecho/camelsnakekebab"
-bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
-dev-repo: "https://github.com/swuecho/camelsnakekebab.git"
-available: [ ocaml-version >= "4.04.0" ]
+bug-reports: "https://github.com/swuecho/camelsnakekebab/issues"
+dev-repo: "git+https://github.com/swuecho/camelsnakekebab.git"
 depends: [
-  "dune" 
+  "ocaml" {>= "4.04.1"}
+  "dune" {build}
   "base"
   "pcre"
-  "ounit" {test}
+  "ounit" {with-test}
 ]
