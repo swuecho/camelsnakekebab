@@ -16,6 +16,6 @@ uninstall:
 reinstall: uninstall reinstall
 
 clean:
-	rm -rf _build
+	dune clean
 
 .PHONY: default install uninstall reinstall clean
