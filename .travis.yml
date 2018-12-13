@@ -7,7 +7,6 @@ env:
   global:
   - EXTRA_REMOTES="https://github.com/mirage/mirage-dev.git"
   - PINS="camelsnakekebab:."
-  - OPAM_VERSION="1.2"
   matrix:
   - PACKAGE="camelsnakekebab" DISTRO="ubuntu-16.04" OCAML_VERSION="4.04"
   - PACKAGE="camelsnakekebab" DISTRO="ubuntu-16.04" OCAML_VERSION="4.05"
