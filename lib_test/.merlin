@@ -1,13 +1,21 @@
-B ../_build/default/lib
-B ../_build/default/lib_test
-FLG -w -40
-PKG base
-PKG base.caml
-PKG base.shadow_stdlib
-PKG bytes
-PKG oUnit
-PKG oUnit.advanced
-PKG pcre
-PKG sexplib.0
-PKG unix
+B /Users/hwu/.opam/system/lib/base
+B /Users/hwu/.opam/system/lib/base/caml
+B /Users/hwu/.opam/system/lib/base/shadow_stdlib
+B /Users/hwu/.opam/system/lib/bytes
+B /Users/hwu/.opam/system/lib/oUnit
+B /Users/hwu/.opam/system/lib/pcre
+B /Users/hwu/.opam/system/lib/sexplib0
+B /usr/local/lib/ocaml
+B ../_build/default/lib/.camelsnakekebab.objs
+B ../_build/default/lib_test/.basic.eobjs
+S /Users/hwu/.opam/system/lib/base
+S /Users/hwu/.opam/system/lib/base/caml
+S /Users/hwu/.opam/system/lib/base/shadow_stdlib
+S /Users/hwu/.opam/system/lib/bytes
+S /Users/hwu/.opam/system/lib/oUnit
+S /Users/hwu/.opam/system/lib/pcre
+S /Users/hwu/.opam/system/lib/sexplib0
+S /usr/local/lib/ocaml
 S ../lib
+S .
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs

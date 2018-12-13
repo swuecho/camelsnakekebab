@@ -1,9 +1,0 @@
-(library
- (
-  (name   camelsnakekebab)
-  (public_name  camelsnakekebab)
-  (libraries (pcre base))
-  (synopsis "Description for this library...")
-
-))
-

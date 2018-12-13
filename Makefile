@@ -2,16 +2,16 @@ INSTALL_ARGS := $(if $(PREFIX),--prefix $(PREFIX),)
 
 # Default rule
 default:
-	jbuilder build @install
+	dune build @install
 
 install:
-	jbuilder install $(INSTALL_ARGS)
+	dune install $(INSTALL_ARGS)
 
 test:
-	jbuilder build @runtest 
+	dune build @runtest 
 
 uninstall:
-	jbuilder uninstall $(INSTALL_ARGS)
+	dune uninstall $(INSTALL_ARGS)
 
 reinstall: uninstall reinstall
 

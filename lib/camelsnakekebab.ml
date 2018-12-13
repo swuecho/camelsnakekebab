@@ -20,7 +20,7 @@ let split_words str =
 let convert_case ~convert_first ~convert_rest ~sep ~str =
   match split_words str with  
   | [] -> failwith "illegal argument str"
-  | hd::tl -> String.concat ~sep ((convert_first hd)::(List.map tl convert_rest));; (* ~sep <=> ~sep:sep *)
+  | hd::tl -> String.concat ~sep ((convert_first hd)::(List.map tl ~f:convert_rest));; 
 
 let lower_camel_case str =
   convert_case ~convert_first:String.lowercase ~convert_rest:String.capitalize ~sep:"" ~str;;
