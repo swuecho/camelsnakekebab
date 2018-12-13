@@ -1,21 +1,25 @@
 opam-version: "1.2"
-version: "0.1"
+version: "0.2"
+synopsis: "A Ocaml library for word case conversion"
+description: """
+conversion bettween upper_camel_case, lower_camel_case 
+lower_snake_case, lower_snake_case, upper_snake_case,
+constant_case, kebab_case, http_header_case 
+"""
 maintainer: "Hao Wu <echowuhao@gmail.com>"
 authors: ["Hao Wu <echowuhao@gmail.com>"]
 license: "Apache-2.0"
-build: [["jbuilder" "build" "--only" "camelsnakekebab" "--root" "." "-j" jobs "@install"]]
+build: ["dune" "build" "-p" camelsnakekebab]
 build-test: [["jbuilder" "build" "@runtest"]]
 homepage: "https://github.com/swuecho/camelsnakekebab"
 bug-reports: "https://github.com/swuecho/camelsnakekebabissues"
 dev-repo: "https://github.com/swuecho/camelsnakekebab.git"
 available: [ ocaml-version >= "4.04.0" ]
 depends: [
-  "jbuilder" 
+  "dune" 
   "base"
   "pcre"
   "ounit" {test}
 ]
 
-#descr: "
-#OCaml library for various case change
-#"
+install: [make "install"]
