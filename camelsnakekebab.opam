@@ -9,7 +9,10 @@ constant_case, kebab_case, http_header_case
 maintainer: "Hao Wu <echowuhao@gmail.com>"
 authors: ["Hao Wu <echowuhao@gmail.com>"]
 license:  "MIT"
-build: ["dune" "build" "-p" name]
+build: [
+["dune" "build" "-p" name]
+["dune" "runtest" "-p" name] {with-test}
+]
 homepage: "https://github.com/swuecho/camelsnakekebab"
 bug-reports: "https://github.com/swuecho/camelsnakekebab/issues"
 dev-repo: "git+https://github.com/swuecho/camelsnakekebab.git"
