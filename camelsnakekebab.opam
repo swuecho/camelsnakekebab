@@ -1,5 +1,5 @@
 opam-version: "2.0"
-version: "0.3"
+version: "0.4"
 synopsis: "A Ocaml library for word case conversion"
 description:"""
 conversion bettween upper_camel_case, lower_camel_case 
